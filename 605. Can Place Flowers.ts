@@ -31,9 +31,7 @@ function canPlaceFlowers(flowerbed: number[], n: number): boolean {
             (i === flowerbed.length - 1 || flowerbed[i + 1] === 0)
         ) {
             n--; // Reduce `n` because we found a valid spot
-            
             if (n === 0) return true; // Early exit if all flowers are placed
-
             i++; // Skip the next spot to prevent adjacent planting
         }
     }
