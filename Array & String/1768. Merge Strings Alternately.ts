@@ -1,14 +1,19 @@
-/**
- * Function to merge two strings by alternating characters from each string.
- * If one string is longer, the remaining characters are appended at the end.
- * 
- * The approach iterates through both strings up to the length of the longer one,
- * alternating characters and appending any leftover characters at the end.
- * 
- * Complexity:
- * - Time: O(n) where n = max(word1.length, word2.length)
- * - Space: O(n) due to storing the merged result in an array before joining.
- */
+import { Info } from "../types"; // Adjust path based on your project structure
+
+export const info: Info = {
+    problemNumber: 1768,
+    problem: "Merge Strings Alternately",
+    source: "LeetCode",
+    difficulty: "Easy",
+    timeComplexity: "O(n)", // Iterates through both strings up to the longest one.
+    spaceComplexity: "O(n)", // Stores the merged result in an array before joining.
+    constraints: {
+        stringLength: "1 <= word1.length, word2.length <= 100",
+        characters: "word1 and word2 consist of lowercase English letters."
+    },
+    exampleInput: ["abc", "pqr"],
+    expectedOutput: "apbqcr"
+};
 
 function mergeAlternately(word1: string, word2: string): string {
     let combo: string[] = []; // ✅ Use an array for efficient concatenation

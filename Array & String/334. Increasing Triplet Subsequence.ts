@@ -1,22 +1,20 @@
-/**
- * LeetCode Problem: Increasing Triplet Subsequence
- * 
- * Given an integer array `nums`, return true if there exists a triplet (i, j, k)
- * such that i < j < k and nums[i] < nums[j] < nums[k]. Otherwise, return false.
- * 
- * The solution must run in O(n) time and use O(1) extra space.
- * 
- * Constraints:
- * - 1 <= nums.length <= 5 * 10^5
- * - -2^31 <= nums[i] <= 2^31 - 1
- * 
- * Time Complexity: O(n) - The algorithm iterates through the array once.
- * Space Complexity: O(1) - Only two variables (`small` and `medium`) are used.
- * 
- * Note: The problem statement does NOT require the triplet to be contiguous.
- * Many users find this misleading, but as long as the indices satisfy i < j < k,
- * and nums[i] < nums[j] < nums[k], the triplet is valid.
- */
+import { Info } from "../types"; // Adjust path based on your project structure
+
+export const info: Info = {
+    problemNumber: 334,
+    problem: "Increasing Triplet Subsequence",
+    source: "LeetCode",
+    difficulty: "Medium",
+    timeComplexity: "O(n)", // The algorithm iterates through the array once.
+    spaceComplexity: "O(1)", // Only two variables (`small` and `medium`) are used.
+    constraints: {
+        arrayLength: "1 <= nums.length <= 5 * 10^5",
+        elementRange: "-2^31 <= nums[i] <= 2^31 - 1"
+    },
+    exampleInput: [1, 2, 3, 4, 5],
+    expectedOutput: true,
+    note: "The problem statement does NOT require the triplet to be contiguous. Many users find this misleading, but as long as the indices satisfy i < j < k, and nums[i] < nums[j] < nums[k], the triplet is valid.",
+};
 
 function increasingTriplet(nums: number[]): boolean {
     let small: number = Infinity; // Tracks the smallest value found so far

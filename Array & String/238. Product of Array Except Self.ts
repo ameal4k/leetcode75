@@ -1,18 +1,21 @@
-/**
- * LeetCode Problem: Product of Array Except Self
- * 
- * Given an integer array `nums`, return an array `answer` such that `answer[i]`
- * is equal to the product of all the elements of `nums` except `nums[i]`.
- *
- * Constraints:
- * - 2 <= nums.length <= 10^5
- * - -30 <= nums[i] <= 30
- * - The product of any prefix or suffix of `nums` is guaranteed to fit in a 32-bit integer.
- * - The solution must run in O(n) time and cannot use division.
- *
- * Time Complexity: O(n) - Efficient single pass updating prefix & suffix.
- * Space Complexity: O(1) - Uses the result array for in-place modification.
- */
+import { Info } from "../types"; // Adjust path based on your project structure
+
+export const info: Info = {
+    problemNumber: 238,
+    problem: "Product of Array Except Self",
+    source: "LeetCode",
+    difficulty: "Medium",
+    timeComplexity: "O(n)", // Efficient single pass updating prefix & suffix.
+    spaceComplexity: "O(1)", // Uses the result array for in-place modification.
+    constraints: {
+        arrayLength: "2 <= nums.length <= 10^5",
+        elementRange: "-30 <= nums[i] <= 30",
+        productGuarantee: "The product of any prefix or suffix of nums fits in a 32-bit integer.",
+        restriction: "The solution must run in O(n) time and cannot use division."
+    },
+    exampleInput: [1, 2, 3, 4],
+    expectedOutput: [24, 12, 8, 6],
+};
 
 function productExceptSelf(nums: number[]): number[] {
     // Variable for input length

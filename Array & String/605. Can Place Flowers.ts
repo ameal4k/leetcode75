@@ -1,23 +1,21 @@
-/**
- * LeetCode Problem: Can Place Flowers
- *
- * You have a long flowerbed in which some plots are planted (1) and some are empty (0). 
- * However, flowers cannot be planted in adjacent plots.
- *
- * Given an integer array `flowerbed`, where `0` means empty and `1` means planted,
- * and an integer `n` representing the number of new flowers to be planted,
- * return `true` if `n` new flowers can be planted in the flowerbed without 
- * violating the no-adjacent-flowers rule, otherwise return `false`.
- *
- * Constraints:
- * - 1 <= flowerbed.length <= 2 * 10^4
- * - flowerbed[i] is 0 or 1.
- * - 0 <= n <= flowerbed.length
- * - The flowerbed has no adjacent flowers initially.
- *
- * Time Complexity: O(n) - We iterate through the flowerbed once, skipping indices when planting.
- * Space Complexity: O(1) - We modify no additional data structures.
- */
+import { Info } from "../types"; // Adjust path based on your project structure
+
+export const info: Info = {
+    problemNumber: 605,
+    problem: "Can Place Flowers",
+    source: "LeetCode",
+    difficulty: "Easy",
+    timeComplexity: "O(n)", // We iterate through the flowerbed once, skipping indices when planting.
+    spaceComplexity: "O(1)", // We modify no additional data structures.
+    constraints: {
+        arrayLength: "1 <= flowerbed.length <= 2 * 10^4",
+        values: "flowerbed[i] is 0 or 1.",
+        plantingLimit: "0 <= n <= flowerbed.length",
+        initialState: "The flowerbed has no adjacent flowers initially."
+    },
+    exampleInput: [[1,0,0,0,1], 1],
+    expectedOutput: true
+};
 
 function canPlaceFlowers(flowerbed: number[], n: number): boolean {
     // If no flowers need to be planted, return true immediately

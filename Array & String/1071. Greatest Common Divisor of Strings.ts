@@ -1,13 +1,20 @@
-/**
- * Function to find the largest common substring (divisor) that evenly divides both strings.
- * 
- * The approach uses the **Euclidean algorithm** to compute the **GCD of the lengths** 
- * of `str1` and `str2`, and then extracts the substring of that length from `str1`.
- *
- * There are two implementations:
- * 1. **Iterative approach** (while loop - more efficient)
- * 2. **Recursive approach** (function calls itself)
- */
+import { Info } from "../types"; // Adjust path based on your project structure
+
+export const info: Info = {
+    problemNumber: 1071,
+    problem: "Greatest Common Divisor of Strings",
+    source: "LeetCode",
+    difficulty: "Easy",
+    timeComplexity: "O(n)", // Iterative GCD function ensures efficient computation.
+    spaceComplexity: "O(1) for iterative, O(log n) for recursive", // Iterative approach avoids function call overhead.
+    constraints: {
+        stringLength: "1 <= str1.length, str2.length <= 1000",
+        characters: "str1 and str2 consist of uppercase English letters."
+    },
+    note: "Uses the Euclidean algorithm to find the greatest common divisor of string lengths.",
+    exampleInput: ["ABABAB", "ABAB"],
+    expectedOutput: "AB"
+};
 
 /**
  * 🔹 Iterative Approach (Using a While Loop)
@@ -31,17 +38,6 @@ function iterative(str1: string, str2: string): string {
     // Step 3: Extract substring up to the GCD length
     return str1.slice(0, gcd(str1.length, str2.length));
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /**
  * 🔹 Recursive Approach (Using Function Calls)

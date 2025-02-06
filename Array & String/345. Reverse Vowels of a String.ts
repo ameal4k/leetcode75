@@ -1,17 +1,19 @@
-/**
- * LeetCode Problem: Reverse Vowels of a String
- * 
- * Given a string `s`, reverse only all the vowels in the string and return it.
- * The vowels are 'a', 'e', 'i', 'o', and 'u', and they can appear in both
- * lower and upper cases, more than once.
- * 
- * Constraints:
- * - 1 <= s.length <= 3 * 10^5
- * - s consists of printable ASCII characters.
- * 
- * Time Complexity: O(n) - Two-pointer traversal ensures linear time complexity.
- * Space Complexity: O(n) - Uses an array for mutable string operations.
- */
+import { Info } from "../types"; // Adjust path based on your project structure
+
+export const info: Info = {
+    problemNumber: 345,
+    problem: "Reverse Vowels of a String",
+    source: "LeetCode",
+    difficulty: "Easy",
+    timeComplexity: "O(n)", // Two-pointer traversal ensures linear time complexity.
+    spaceComplexity: "O(n)", // Uses an array for mutable string operations.
+    constraints: {
+        stringLength: "1 <= s.length <= 3 * 10^5",
+        characters: "s consists of printable ASCII characters."
+    },
+    exampleInput: "IceCreAm",
+    expectedOutput: "AceCreIm"
+};
 
 function reverseVowels(s: string): string {
     // Use a Set for vowels which allows O(1) lookups with has(), faster than includes()

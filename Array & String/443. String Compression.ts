@@ -1,17 +1,19 @@
-/**
- * LeetCode Problem: String Compression
- *
- * Given an array of characters, compress it in-place by replacing consecutive 
- * repeating characters with the character followed by the count of occurrences.
- * The compressed result must fit within the input array, and the function returns
- * the new length of the array after compression.
- *
- * Example Input: ["a","a","b","b","c","c","c"]
- * Expected Output: Return 6, and modify chars[] to ["a","2","b","2","c","3"]
- *
- * Time Complexity: O(n) - Each character is visited only once.
- * Space Complexity: O(1) - Modifies the input array without extra space.
- */
+import { Info } from "../types"; // Adjust path based on your project structure
+
+export const info: Info = {
+    problemNumber: 443,
+    problem: "String Compression",
+    source: "LeetCode",
+    difficulty: "Medium",
+    timeComplexity: "O(n)", // Each character is visited only once.
+    spaceComplexity: "O(1)", // Modifies the input array without extra space.
+    constraints: {
+        description: "Given an array of characters, compress it in-place by replacing consecutive repeating characters with the character followed by the count of occurrences.",
+        restriction: "The compressed result must fit within the input array, and the function returns the new length of the array after compression."
+    },
+    exampleInput: ["a","a","b","b","c","c","c"],
+    expectedOutput: 6
+};
 
 function compress(chars: string[]): number {
     let write = 0; // Position to write compressed data

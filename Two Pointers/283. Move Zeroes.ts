@@ -1,21 +1,27 @@
 /**
  * LeetCode Problem: Move Zeroes
- * 
+ *
  * Given an integer array `nums`, move all 0's to the end of it while maintaining
  * the relative order of the non-zero elements.
- * 
+ *
  * The function modifies the input array in-place and does not return anything.
- *
- * Example Input: [0,1,0,3,12]
- * Expected Output: [1,3,12,0,0]
- *
- * Constraints:
- * - 1 <= nums.length <= 10^4
- * - -2^31 <= nums[i] <= 2^31 - 1
- *
- * Time Complexity: O(n) - Each element is processed once.
- * Space Complexity: O(1) - Modifies the input array without extra space.
  */
+import { Info } from '../types' // Adjust path based on your project structure
+
+export const info: Info = {
+    problemNumber: 283,
+    problem: "Move Zeroes",
+    source: "LeetCode",
+    difficulty: "Easy",
+    timeComplexity: "O(n)", // Each element is processed once
+    spaceComplexity: "O(1)", // Modifies the input array without extra space
+    constraints: {
+        arrayLength: "1 <= nums.length <= 10^4",
+        elementRange: "-2^31 <= nums[i] <= 2^31 - 1"
+    },
+    exampleInput: [0,1,0,3,12],
+    expectedOutput: [1,3,12,0,0],
+};
 
 function moveZeroes(nums: number[]): void {
     let write = 0; // Pointer to track where to write non-zero values
