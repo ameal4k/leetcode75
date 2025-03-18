@@ -14,6 +14,10 @@ export const info: Info = {
     },
     exampleInput: "nums = [3,1,3,4,3], k = 6",
     expectedOutput: "1",
+    runtime: 80, // Execution time in milliseconds
+    runtimePercentile: 95.32, // Percentile ranking for runtime performance
+    memory: 70.05, // Memory usage in MB
+    memoryPercentile: 22.59, // Percentile ranking for memory efficiency
     note: "Uses a hash map to track complements, ensuring an efficient O(n) solution."
 };
 

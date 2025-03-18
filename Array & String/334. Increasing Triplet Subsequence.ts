@@ -14,21 +14,27 @@ export const info: Info = {
     exampleInput: [1, 2, 3, 4, 5],
     expectedOutput: true,
     note: "The problem statement does NOT require the triplet to be contiguous. Many users find this misleading, but as long as the indices satisfy i < j < k, and nums[i] < nums[j] < nums[k], the triplet is valid.",
+    runtime: 0, // Execution time in milliseconds (to be updated)
+    runtimePercentile: 100, // Percentile ranking for runtime performance
+    memory: 77.02, // Memory usage in MB (to be updated)
+    memoryPercentile: 21.84, // Percentile ranking for memory efficiency
 };
 
 function increasingTriplet(nums: number[]): boolean {
-    let small: number = Infinity; // Tracks the smallest value found so far
-    let medium: number = Infinity; // Tracks the second smallest value found so far
+    let small: number = Number.MAX_SAFE_INTEGER;
+    let medium: number = Number.MAX_SAFE_INTEGER;
 
     for (let i = 0; i < nums.length; i++) {
-        if (nums[i] <= small) {
-            small = nums[i];  // ✅ Update the smallest number
-        } else if (nums[i] <= medium) {
-            medium = nums[i]; // ✅ Update the second smallest number
+        let num = nums[i]; // ✅ Cache lookup for performance
+        if (num <= small) {
+            small = num;  // ✅ Update `small` if a new smallest is found
+        } else if (num <= medium) {
+            medium = num; // ✅ Update `medium` if a new second smallest is found
         } else {
-            return true;      // ✅ Found a triplet: small < medium < nums[i]
+            return true;  // ✅ Found a triplet: small < medium < nums[i]
         }
     }
+
     return false;
 }
 

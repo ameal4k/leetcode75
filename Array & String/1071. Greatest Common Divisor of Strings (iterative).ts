@@ -13,7 +13,11 @@ export const info: Info = {
     },
     note: "Uses the Euclidean algorithm to find the greatest common divisor of string lengths.",
     exampleInput: ["ABABAB", "ABAB"],
-    expectedOutput: "AB"
+    expectedOutput: "AB",
+    runtime: 0, // Execution time in milliseconds (to be filled manually)
+    runtimePercentile: 100, // Percentile ranking for runtime performance
+    memory: 58.09, // Memory usage in MB (to be filled manually)
+    memoryPercentile: 14.43, // Percentile ranking for memory efficiency
 };
 
 /**
@@ -21,7 +25,7 @@ export const info: Info = {
  * - Uses an **iterative GCD function** to find the greatest common divisor.
  * - **More memory-efficient** (O(1) space, avoids function call overhead).
  */
-function iterative(str1: string, str2: string): string {
+function gcdOfStrings(str1: string, str2: string): string {
     // Step 1: Ensure str1 and str2 can share a common divisor pattern
     if (str1 + str2 !== str2 + str1) {
         return ""; // If concatenations are different, no common divisor exists
@@ -39,33 +43,13 @@ function iterative(str1: string, str2: string): string {
     return str1.slice(0, gcd(str1.length, str2.length));
 }
 
-/**
- * 🔹 Recursive Approach (Using Function Calls)
- * - Uses a **recursive GCD function** to find the greatest common divisor.
- * - **Less efficient** due to function call overhead (O(log n) recursion depth).
- */
-function recursive(str1: string, str2: string): string {
-    // Step 1: Ensure str1 and str2 can share a common divisor pattern
-    if (str1 + str2 !== str2 + str1) {
-        return ""; // If concatenations are different, no common divisor exists
-    }
-
-    // Step 2: Recursive function to compute GCD
-    function gcd(a: number, b: number): number {
-        return b === 0 ? a : gcd(b, a % b); // Recursively call gcd until b = 0
-    }
-
-    // Step 3: Extract substring up to the GCD length
-    const gcdLength = gcd(str1.length, str2.length);
-    return str1.substring(0, gcdLength);
-}
 
 // 🔥 Example Usage & Testing
-console.log(iterative("ABABAB", "ABAB")); // Expected Output: "AB"
-console.log(recursive("ABABAB", "ABAB")); // Expected Output: "AB"
+console.log(gcdOfStrings("ABABAB", "ABAB")); // Expected Output: "AB"
 
-console.log(iterative("ABCABC", "ABC")); // Expected Output: "ABC"
-console.log(recursive("ABCABC", "ABC")); // Expected Output: "ABC"
 
-console.log(iterative("LEET", "CODE")); // Expected Output: ""
-console.log(recursive("LEET", "CODE")); // Expected Output: ""
+console.log(gcdOfStrings("ABCABC", "ABC")); // Expected Output: "ABC"
+
+
+console.log(gcdOfStrings("LEET", "CODE")); // Expected Output: ""
+

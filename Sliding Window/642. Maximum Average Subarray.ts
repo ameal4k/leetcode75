@@ -13,6 +13,10 @@ export const info: Info = {
     },
     exampleInput: "nums = [1,12,-5,-6,50,3], k = 4",
     expectedOutput: "12.75000",
+    runtime: 1, // Execution time in milliseconds
+    runtimePercentile: 99.51, // Percentile ranking for runtime performance
+    memory: 69.56, // Memory usage in MB
+    memoryPercentile: 41.67, // Percentile ranking for memory efficiency
     note: "Sliding window technique maintains a running sum for O(n) efficiency."
 };
 

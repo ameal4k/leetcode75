@@ -13,7 +13,11 @@ export const info: Info = {
         extraCandiesRange: "1 <= extraCandies <= 50"
     },
     exampleInput: [[2,3,5,1,3], 3],
-    expectedOutput: [true, true, true, false, true]
+    expectedOutput: [true, true, true, false, true],
+    runtime: 0, // Execution time in milliseconds (to be filled manually)
+    runtimePercentile: 100, // Percentile ranking for runtime performance
+    memory: 56.26, // Memory usage in MB (to be filled manually)
+    memoryPercentile: 37.89, // Percentile ranking for memory efficiency
 };
 
 function kidsWithCandies(candies: number[], extraCandies: number): boolean[] {

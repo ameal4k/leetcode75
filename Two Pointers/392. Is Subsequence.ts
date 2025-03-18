@@ -14,23 +14,29 @@ export const info: Info = {
     },
     exampleInput: "s = 'abc', t = 'ahbgdc'",
     expectedOutput: "true",
-    note: "Optimized two-pointer approach with early exits."
+    runtime: 0, // Execution time in milliseconds
+    runtimePercentile: 100, // Percentile ranking for runtime performance
+    memory: 56.72, // Memory usage in MB
+    memoryPercentile: 13.4, // Percentile ranking for memory efficiency
+    note: "Optimized two-pointer approach with early exits and while loop."
 };
 
 function isSubsequence(s: string, t: string): boolean {
     if (s.length === 0) return true;  // ✅ An empty string is always a subsequence
     if (s.length > t.length) return false;  // ✅ If s is longer than t, it's impossible
 
-    let sIndex = 0;
-    
-    // ✅ Using a for-loop for optimized traversal
-    for (let tIndex = 0; tIndex < t.length && sIndex < s.length; tIndex++) {
+    let sIndex = 0, tIndex = 0;
+
+    // ✅ Using a while-loop for optimized traversal
+    while (tIndex < t.length) {
         if (s[sIndex] === t[tIndex]) {
-            sIndex++; // ✅ Move forward in s if we find a match in t
+            sIndex++; // ✅ Move forward in `s` if we find a match in `t`
+            if (sIndex === s.length) return true; // ✅ Early exit when `s` is fully matched
         }
+        tIndex++;
     }
 
-    return sIndex === s.length;
+    return false;
 }
 
 // 🔥 Example Test Cases

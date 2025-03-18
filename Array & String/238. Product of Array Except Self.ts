@@ -15,6 +15,10 @@ export const info: Info = {
     },
     exampleInput: [1, 2, 3, 4],
     expectedOutput: [24, 12, 8, 6],
+    runtime: 3, // Execution time in milliseconds (to be updated)
+    runtimePercentile: 93.44, // Percentile ranking for runtime performance
+    memory: 72.61, // Memory usage in MB (to be updated)
+    memoryPercentile: 17.67, // Percentile ranking for memory efficiency
 };
 
 function productExceptSelf(nums: number[]): number[] {

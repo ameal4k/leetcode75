@@ -12,7 +12,11 @@ export const info: Info = {
         characters: "s consists of printable ASCII characters."
     },
     exampleInput: "IceCreAm",
-    expectedOutput: "AceCreIm"
+    expectedOutput: "AceCreIm",
+    runtime: 2, // Execution time in milliseconds (to be filled manually)
+    runtimePercentile: 98.9, // Percentile ranking for runtime performance
+    memory: 61.69, // Memory usage in MB (to be filled manually)
+    memoryPercentile: 38.77, // Percentile ranking for memory efficiency
 };
 
 function reverseVowels(s: string): string {

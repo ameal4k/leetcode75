@@ -13,6 +13,10 @@ export const info: Info = {
     },
     exampleInput: "height = [1,8,6,2,5,4,8,3,7]",
     expectedOutput: "49",
+    runtime: 1, // Execution time in milliseconds
+    runtimePercentile: 94.22, // Percentile ranking for runtime performance
+    memory: 63.92, // Memory usage in MB
+    memoryPercentile: 42.02, // Percentile ranking for memory efficiency
     note: "Optimized two-pointer technique with early exits for better performance."
 };
 
