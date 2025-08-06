@@ -13,4 +13,6 @@ export type Info = {
     memory?: number; // Memory usage in MB
     memoryPercentile?: number; // Percentile ranking for memory efficiency
     note?: string;
+    path?: string;
+    learned?: boolean;
 };

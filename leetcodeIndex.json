@@ -1,0 +1,2117 @@
+{
+  "progress": {
+    "totalCount": 77,
+    "learnedCount": 0,
+    "unlearnedCount": 77,
+    "percentComplete": 0,
+    "byDifficulty": {
+      "Easy": {
+        "total": 24,
+        "learned": 0,
+        "percent": 0
+      },
+      "Medium": {
+        "total": 53,
+        "learned": 0,
+        "percent": 0
+      },
+      "Hard": {
+        "total": 0,
+        "learned": 0,
+        "percent": 0
+      }
+    },
+    "avgRuntime": 30.49,
+    "avgMemory": 64.54,
+    "avgRuntimePercentile": 93.38,
+    "avgMemoryPercentile": 52.81,
+    "complexityStats": {
+      "time": {
+        "O(n)": 47,
+        "O(log n)": 2,
+        "O(h)": 2,
+        "O(n + m)": 1,
+        "O(1) amortized": 1,
+        "O(m log m + n log m)": 1,
+        "O(n log m)": 1,
+        "O(4ⁿ · n)": 1,
+        "O(2⁹ · k)": 1,
+        "O(1)": 1,
+        "O(m × n)": 1,
+        "O(min(m, n))": 1,
+        "O(mn)": 1,
+        "O(m*n)": 2,
+        "O(E + Q * α(V))": 1,
+        "O(n^2)": 2,
+        "O(n + e)": 1,
+        "O(n log n)": 3,
+        "O(n) average / O(n^2) worst": 1,
+        "O(log n) per operation": 1,
+        "O((k + candidates) log candidates)": 1,
+        "O(n log k)": 1,
+        "Amortized O(1) per call": 1,
+        "O(n log n + m log n)": 1,
+        "O(m)": 1
+      },
+      "space": {
+        "O(1) for iterative, O(log n) for recursive": 2,
+        "O(n)": 20,
+        "O(1)": 33,
+        "O(h)": 6,
+        "O(h1 + h2)": 1,
+        "O(4ⁿ · n)": 1,
+        "O(k)": 2,
+        "O(w)": 2,
+        "O(min(m, n))": 2,
+        "O(m*n)": 2,
+        "O(V)": 1,
+        "O(n^2)": 1,
+        "O(candidates)": 1,
+        "O(log n)": 2,
+        "O(N·σ)": 1
+      }
+    }
+  },
+  "learned": {},
+  "unlearned": {
+    "Easy": [
+      {
+        "problemNumber": 1071,
+        "problem": "Greatest Common Divisor of Strings",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1) for iterative, O(log n) for recursive",
+        "constraints": {
+          "stringLength": "1 <= str1.length, str2.length <= 1000",
+          "characters": "str1 and str2 consist of uppercase English letters."
+        },
+        "note": "Uses the Euclidean algorithm to find the greatest common divisor of string lengths.",
+        "exampleInput": [
+          "ABABAB",
+          "ABAB"
+        ],
+        "expectedOutput": "AB",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 58.09,
+        "memoryPercentile": 14.43,
+        "path": "Array & String/1071. Greatest Common Divisor of Strings (iterative).ts"
+      },
+      {
+        "problemNumber": 1071,
+        "problem": "Greatest Common Divisor of Strings",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1) for iterative, O(log n) for recursive",
+        "constraints": {
+          "stringLength": "1 <= str1.length, str2.length <= 1000",
+          "characters": "str1 and str2 consist of uppercase English letters."
+        },
+        "note": "Uses the Euclidean algorithm to find the greatest common divisor of string lengths.",
+        "exampleInput": [
+          "ABABAB",
+          "ABAB"
+        ],
+        "expectedOutput": "AB",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 54.01,
+        "memoryPercentile": 52.74,
+        "path": "Array & String/1071. Greatest Common Divisor of Strings (recursive).ts"
+      },
+      {
+        "problemNumber": 1431,
+        "problem": "Kids With the Greatest Number of Candies",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "arrayLength": "2 <= candies.length <= 100",
+          "valueRange": "1 <= candies[i] <= 100",
+          "extraCandiesRange": "1 <= extraCandies <= 50"
+        },
+        "exampleInput": [
+          [
+            2,
+            3,
+            5,
+            1,
+            3
+          ],
+          3
+        ],
+        "expectedOutput": [
+          true,
+          true,
+          true,
+          false,
+          true
+        ],
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 56.26,
+        "memoryPercentile": 37.89,
+        "path": "Array & String/1431. Kids With the Greatest Number of Candies.ts"
+      },
+      {
+        "problemNumber": 1768,
+        "problem": "Merge Strings Alternately",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "stringLength": "1 <= word1.length, word2.length <= 100",
+          "characters": "word1 and word2 consist of lowercase English letters."
+        },
+        "exampleInput": [
+          "abc",
+          "pqr"
+        ],
+        "expectedOutput": "apbqcr",
+        "runtime": 43,
+        "runtimePercentile": 91.31,
+        "memory": 55.64,
+        "memoryPercentile": 34.73,
+        "path": "Array & String/1768. Merge Strings Alternately.ts"
+      },
+      {
+        "problemNumber": 345,
+        "problem": "Reverse Vowels of a String",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "stringLength": "1 <= s.length <= 3 * 10^5",
+          "characters": "s consists of printable ASCII characters."
+        },
+        "exampleInput": "IceCreAm",
+        "expectedOutput": "AceCreIm",
+        "runtime": 2,
+        "runtimePercentile": 98.9,
+        "memory": 61.69,
+        "memoryPercentile": 38.77,
+        "path": "Array & String/345. Reverse Vowels of a String.ts"
+      },
+      {
+        "problemNumber": 605,
+        "problem": "Can Place Flowers",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "arrayLength": "1 <= flowerbed.length <= 2 * 10^4",
+          "values": "flowerbed[i] is 0 or 1.",
+          "plantingLimit": "0 <= n <= flowerbed.length",
+          "initialState": "The flowerbed has no adjacent flowers initially."
+        },
+        "exampleInput": [
+          [
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          1
+        ],
+        "expectedOutput": true,
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 57.67,
+        "memoryPercentile": 39.08,
+        "note": "Further optimized loop with reduced condition checks.",
+        "path": "Array & String/605. Can Place Flowers.ts"
+      },
+      {
+        "problemNumber": 374,
+        "problem": "Guess Number Higher or Lower",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(log n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "range": "1 <= n <= 2^31 - 1",
+          "pick": "1 <= pick <= n"
+        },
+        "exampleInput": "n = 10, pick = 6",
+        "expectedOutput": "6",
+        "runtime": 29,
+        "runtimePercentile": 99.5,
+        "memory": 55.6,
+        "memoryPercentile": 54.37,
+        "note": "Use unsigned right‐shift for midpoint: (low+high)>>>1 to avoid overflow and expensive Math.floor/divide.",
+        "path": "Binary Search/374. GuessNumberHigherOrLower.ts"
+      },
+      {
+        "problemNumber": 700,
+        "problem": "Search in a Binary Search Tree",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(h)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "nodeCount": "1 <= number of nodes <= 5000",
+          "nodeValueRange": "1 <= Node.val <= 10^7",
+          "bstProperty": "root is a Binary Search Tree",
+          "searchValRange": "1 <= val <= 10^7"
+        },
+        "exampleInput": {
+          "root": "[4,2,7,1,3]",
+          "val": 2
+        },
+        "expectedOutput": "[2,1,3]",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 63.34,
+        "memoryPercentile": 24.43,
+        "note": "Iterative search leveraging BST ordering: move left if val < node.val, right otherwise.",
+        "path": "Binary Search Tree/700. SearchInABinarySearchTree.ts"
+      },
+      {
+        "problemNumber": 104,
+        "problem": "Maximum Depth of Binary Tree",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(h)",
+        "constraints": {
+          "nodeCount": "0 <= number of nodes <= 10^4",
+          "nodeValueRange": "-100 <= Node.val <= 100"
+        },
+        "exampleInput": "[3,9,20,null,null,15,7]",
+        "expectedOutput": 3,
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 59,
+        "memoryPercentile": 66.68,
+        "note": "Recursive DFS returning 1 + max(depth(left), depth(right)).",
+        "path": "Binary Tree - DFS/104. MaxDepthBinaryTree.ts"
+      },
+      {
+        "problemNumber": 872,
+        "problem": "Leaf-Similar Trees",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n + m)",
+        "spaceComplexity": "O(h1 + h2)",
+        "constraints": {
+          "nodeCount": "1 <= nodes in each tree <= 200",
+          "nodeValue": "0 <= Node.val <= 200"
+        },
+        "exampleInput": {
+          "root1": "[3,5,1,6,2,9,8,null,null,7,4]",
+          "root2": "[3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]"
+        },
+        "expectedOutput": true,
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 58.18,
+        "memoryPercentile": 63.42,
+        "note": "DFS collects leaf values for each tree and compares sequences. Uses early exit for unequal lengths.",
+        "path": "Binary Tree - DFS/872. Leaf-SimilarTrees.ts"
+      },
+      {
+        "problemNumber": 136,
+        "problem": "Single Number",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "arrayLength": "1 <= nums.length <= 3 * 10^4",
+          "elementRange": "-3 * 10^4 <= nums[i] <= 3 * 10^4"
+        },
+        "exampleInput": [
+          4,
+          1,
+          2,
+          1,
+          2
+        ],
+        "expectedOutput": 4,
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 56.54,
+        "memoryPercentile": 82.83,
+        "note": "This is already optimal—XOR in a single pass with constant extra space.",
+        "path": "Bit Manipulation/136. SingleNumber.ts"
+      },
+      {
+        "problemNumber": 338,
+        "problem": "Counting Bits",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "nRange": "0 <= n <= 10^5"
+        },
+        "exampleInput": 5,
+        "expectedOutput": [
+          0,
+          1,
+          1,
+          2,
+          1,
+          2
+        ],
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 61.91,
+        "memoryPercentile": 61.28,
+        "note": "Uses ans[i] = ans[i>>1] + (i&1) to avoid any string/array allocations.",
+        "path": "Bit Manipulation/338. CountingBits.ts"
+      },
+      {
+        "problemNumber": 1137,
+        "problem": "N-th Tribonacci Number",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "n": "0 <= n <= 37"
+        },
+        "exampleInput": "n = 4",
+        "expectedOutput": "4",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 55.64,
+        "memoryPercentile": 10.17,
+        "note": "Use three variables to iteratively build the Tribonacci sequence.",
+        "path": "DP - 1D/1137. NthTribonacciNumber.ts"
+      },
+      {
+        "problemNumber": 746,
+        "problem": "Min Cost Climbing Stairs",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "length": "2 <= cost.length <= 1000",
+          "values": "0 <= cost[i] <= 999"
+        },
+        "exampleInput": "cost = [10,15,20]",
+        "expectedOutput": "15",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 55.73,
+        "memoryPercentile": 93.45,
+        "note": "Cached length & inlined min comparison to avoid function call overhead.",
+        "path": "DP - 1D/756. MinCostClimbingStairs.ts"
+      },
+      {
+        "problemNumber": 1207,
+        "problem": "Unique Number of Occurrences",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "arrayLength": "1 <= arr.length <= 1000",
+          "elementRange": "-1000 <= arr[i] <= 1000"
+        },
+        "exampleInput": [
+          1,
+          2,
+          2,
+          1,
+          1,
+          3
+        ],
+        "expectedOutput": true,
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 56.71,
+        "memoryPercentile": 31.81,
+        "note": "Uses hash maps to count occurrences and a set to check uniqueness.",
+        "path": "Hash Map & Set/1207. Unique Number of Occurances.ts"
+      },
+      {
+        "problemNumber": 2215,
+        "problem": "Find the Difference of Two Arrays",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "arrayLength": "1 <= nums1.length, nums2.length <= 1000",
+          "elementRange": "-1000 <= nums1[i], nums2[i] <= 1000"
+        },
+        "exampleInput": [
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            2,
+            4,
+            6
+          ]
+        ],
+        "expectedOutput": [
+          [
+            1,
+            3
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "runtime": 6,
+        "runtimePercentile": 93.39,
+        "memory": 62.1,
+        "memoryPercentile": 40.74,
+        "note": "Optimized hash set approach for quick lookups and filtering.",
+        "path": "Hash Map & Set/2215. Find the Diff of Two Arrays.ts"
+      },
+      {
+        "problemNumber": 206,
+        "problem": "Reverse Linked List (Iterative)",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "listLength": "0 <= list.length <= 5000",
+          "nodeValue": "-5000 <= Node.val <= 5000"
+        },
+        "exampleInput": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "expectedOutput": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 58.86,
+        "memoryPercentile": 18.62,
+        "note": "Optimized iterative approach with minimal memory overhead.",
+        "path": "Linked List/206. Reverse Linked List Iterative.ts"
+      },
+      {
+        "problemNumber": 206,
+        "problem": "Reverse Linked List (Recursive)",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "listSize": "0 <= list.length <= 5000",
+          "nodeValues": "-5000 <= Node.val <= 5000"
+        },
+        "exampleInput": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "expectedOutput": [
+          5,
+          4,
+          3,
+          2,
+          1
+        ],
+        "runtime": 1,
+        "runtimePercentile": 19.76,
+        "memory": 59.08,
+        "memoryPercentile": 9.86,
+        "note": "Recursive approach suffers from high memory usage due to call stack buildup (O(n) space). The iterative approach is preferred in practice as it avoids recursion overhead and runs in O(1) space.",
+        "path": "Linked List/206. Reverse Linked List Recursive.ts"
+      },
+      {
+        "problemNumber": 1732,
+        "problem": "Find the Highest Altitude",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "arrayLength": "1 <= n <= 100",
+          "elementRange": "-100 <= gain[i] <= 100"
+        },
+        "exampleInput": [
+          -5,
+          1,
+          5,
+          0,
+          -7
+        ],
+        "expectedOutput": 1,
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 55.53,
+        "memoryPercentile": 36.6,
+        "note": "Optimized O(n) solution using a single loop to track max altitude.",
+        "path": "Prefix Sum/1732. Find Highest Altitude.ts"
+      },
+      {
+        "problemNumber": 724,
+        "problem": "Find Pivot Index",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "arrayLength": "1 <= nums.length <= 10^4",
+          "elementRange": "-1000 <= nums[i] <= 1000"
+        },
+        "exampleInput": [
+          1,
+          7,
+          3,
+          6,
+          5,
+          6
+        ],
+        "expectedOutput": 3,
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 58.07,
+        "memoryPercentile": 47.63,
+        "note": "Final optimized O(n) solution with minimal computation inside the loop.",
+        "path": "Prefix Sum/724. Find Pivot Index.ts"
+      },
+      {
+        "problemNumber": 933,
+        "problem": "Number of Recent Calls",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(1) amortized",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "requestTime": "1 <= t <= 10^9",
+          "increasingTime": "Each test case will call ping with strictly increasing values of t.",
+          "maxCalls": "At most 10^4 calls to ping."
+        },
+        "exampleInput": [
+          "RecentCounter",
+          "ping",
+          "ping",
+          "ping",
+          "ping"
+        ],
+        "expectedOutput": [
+          null,
+          1,
+          2,
+          3,
+          3
+        ],
+        "runtime": 22,
+        "runtimePercentile": 100,
+        "memory": 71.6,
+        "memoryPercentile": 19.4,
+        "note": "Optimized queue with left boundary tracking instead of shift(), ensuring O(1) performance.",
+        "path": "Queue/933. Number of Recent Calls.ts"
+      },
+      {
+        "problemNumber": 643,
+        "problem": "Maximum Average Subarray I",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "arrayLength": "1 <= k <= n <= 10^5",
+          "valuesRange": "-10^4 <= nums[i] <= 10^4"
+        },
+        "exampleInput": "nums = [1,12,-5,-6,50,3], k = 4",
+        "expectedOutput": "12.75000",
+        "runtime": 1,
+        "runtimePercentile": 99.51,
+        "memory": 69.56,
+        "memoryPercentile": 41.67,
+        "note": "Sliding window technique maintains a running sum for O(n) efficiency.",
+        "path": "Sliding Window/642. Maximum Average Subarray.ts"
+      },
+      {
+        "problemNumber": 283,
+        "problem": "Move Zeroes",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "arrayLength": "1 <= nums.length <= 10^4",
+          "elementRange": "-2^31 <= nums[i] <= 2^31 - 1"
+        },
+        "exampleInput": [
+          0,
+          1,
+          0,
+          3,
+          12
+        ],
+        "expectedOutput": [
+          1,
+          3,
+          12,
+          0,
+          0
+        ],
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 61.85,
+        "memoryPercentile": 12.81,
+        "note": "Optimized two-pointer swap method reduces unnecessary writes.",
+        "path": "Two Pointers/283. Move Zeroes.ts"
+      },
+      {
+        "problemNumber": 392,
+        "problem": "Is Subsequence",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "stringLengthS": "0 <= s.length <= 100",
+          "stringLengthT": "0 <= t.length <= 10^4",
+          "characters": "s and t consist only of lowercase English letters."
+        },
+        "exampleInput": "s = 'abc', t = 'ahbgdc'",
+        "expectedOutput": "true",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 56.72,
+        "memoryPercentile": 13.4,
+        "note": "Optimized two-pointer approach with early exits and while loop.",
+        "path": "Two Pointers/392. Is Subsequence.ts"
+      }
+    ],
+    "Medium": [
+      {
+        "problemNumber": 151,
+        "problem": "Reverse Words in a String",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "stringLength": "1 <= s.length <= 10^4",
+          "characters": "s consists of English letters (upper/lower case), digits, and spaces ' '.",
+          "hasWords": "There is at least one word in s."
+        },
+        "exampleInput": "the sky is blue",
+        "expectedOutput": "blue is sky the",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 57.66,
+        "memoryPercentile": 28.01,
+        "note": "Reverted to best-performing solution using optimized regex split.",
+        "path": "Array & String/151. Reverse Words in a String.ts"
+      },
+      {
+        "problemNumber": 238,
+        "problem": "Product of Array Except Self",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "arrayLength": "2 <= nums.length <= 10^5",
+          "elementRange": "-30 <= nums[i] <= 30",
+          "productGuarantee": "The product of any prefix or suffix of nums fits in a 32-bit integer.",
+          "restriction": "The solution must run in O(n) time and cannot use division."
+        },
+        "exampleInput": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "expectedOutput": [
+          24,
+          12,
+          8,
+          6
+        ],
+        "runtime": 3,
+        "runtimePercentile": 93.44,
+        "memory": 72.61,
+        "memoryPercentile": 17.67,
+        "path": "Array & String/238. Product of Array Except Self.ts"
+      },
+      {
+        "problemNumber": 334,
+        "problem": "Increasing Triplet Subsequence",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "arrayLength": "1 <= nums.length <= 5 * 10^5",
+          "elementRange": "-2^31 <= nums[i] <= 2^31 - 1"
+        },
+        "exampleInput": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "expectedOutput": true,
+        "note": "The problem statement does NOT require the triplet to be contiguous. Many users find this misleading, but as long as the indices satisfy i < j < k, and nums[i] < nums[j] < nums[k], the triplet is valid.",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 77.02,
+        "memoryPercentile": 21.84,
+        "path": "Array & String/334. Increasing Triplet Subsequence.ts"
+      },
+      {
+        "problemNumber": 443,
+        "problem": "String Compression",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "description": "Compress the character array in-place by replacing consecutive repeating characters with the character followed by the count of occurrences.",
+          "restriction": "The compressed result must fit within the input array, and the function returns the new length of the array after compression."
+        },
+        "exampleInput": [
+          "a",
+          "a",
+          "b",
+          "b",
+          "c",
+          "c",
+          "c"
+        ],
+        "expectedOutput": 6,
+        "runtime": 1,
+        "runtimePercentile": 83.92,
+        "memory": 59,
+        "memoryPercentile": 28.49,
+        "note": "Manual digit handling and in-place writing for minimal overhead.",
+        "path": "Array & String/443. String Compression.ts"
+      },
+      {
+        "problemNumber": 162,
+        "problem": "Find Peak Element",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(log n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "n": "1 <= nums.length <= 1000",
+          "values": "-2^31 <= nums[i] <= 2^31 - 1",
+          "distinct": "nums[i] != nums[i+1] for all valid i"
+        },
+        "exampleInput": "[1,2,3,1]",
+        "expectedOutput": "2",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 55.26,
+        "memoryPercentile": 62.85,
+        "note": "Use binary search: if nums[mid] < nums[mid+1], a peak lies to the right, else to the left (including mid).",
+        "path": "Binary Search/162. FindPeakElement.ts"
+      },
+      {
+        "problemNumber": 2300,
+        "problem": "Successful Pairs of Spells and Potions",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(m log m + n log m)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "n": "1 <= spells.length <= 10^5",
+          "m": "1 <= potions.length <= 10^5",
+          "values": "1 <= spells[i], potions[j] <= 10^5",
+          "success": "1 <= success <= 10^10"
+        },
+        "exampleInput": "spells = [5,1,3], potions = [1,2,3,4,5], success = 7",
+        "expectedOutput": "[4,0,3]",
+        "runtime": 72,
+        "runtimePercentile": 94.59,
+        "memory": 84.64,
+        "memoryPercentile": 88.11,
+        "note": "Sort the potions array, then for each spell compute the minimal required potion strength via ceil(success/spell) and binary search for its first occurrence.",
+        "path": "Binary Search/2300. SuccessfulPairs.ts"
+      },
+      {
+        "problemNumber": 875,
+        "problem": "Koko Eating Bananas",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n log m)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "n": "1 <= piles.length <= 10^4",
+          "h": "piles.length <= h <= 10^9",
+          "values": "1 <= piles[i] <= 10^9"
+        },
+        "exampleInput": "piles = [3,6,7,11], h = 8",
+        "expectedOutput": "4",
+        "runtime": 2,
+        "runtimePercentile": 100,
+        "memory": 59.07,
+        "memoryPercentile": 72.96,
+        "note": "Use bitwise operations for ceil division to avoid Math.floor overhead.",
+        "path": "Binary Search/875. KokoEatingBananas.ts"
+      },
+      {
+        "problemNumber": 17,
+        "problem": "Letter Combinations of a Phone Number",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(4ⁿ · n)",
+        "spaceComplexity": "O(4ⁿ · n)",
+        "constraints": {
+          "length": "0 <= digits.length <= 4",
+          "digits": "digits[i] is in the range ['2', '9']"
+        },
+        "exampleInput": "digits = \"23\"",
+        "expectedOutput": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 55.11,
+        "memoryPercentile": 66.13,
+        "note": "Iterative BFS-style expansion avoids recursion overhead.",
+        "path": "Backtracking/17. LetterCombinations.ts"
+      },
+      {
+        "problemNumber": 216,
+        "problem": "Combination Sum III",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(2⁹ · k)",
+        "spaceComplexity": "O(k)",
+        "constraints": {
+          "k": "2 <= k <= 9",
+          "n": "1 <= n <= 60"
+        },
+        "exampleInput": "k = 3, n = 7",
+        "expectedOutput": "[[1,2,4]]",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 55.15,
+        "memoryPercentile": 87.62,
+        "note": "Backtrack through numbers 1…9, prune when sum exceeds n or remaining slots can't be filled.",
+        "path": "Backtracking/216. CombinationSumIII.ts"
+      },
+      {
+        "problemNumber": 1161,
+        "problem": "Maximum Level Sum of a Binary Tree",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(w)",
+        "constraints": {
+          "nodeCount": "1 <= number of nodes <= 10^4",
+          "nodeValueRange": "-10^5 <= Node.val <= 10^5"
+        },
+        "exampleInput": "[1,7,0,7,-8,null,null]",
+        "expectedOutput": 2,
+        "runtime": 5,
+        "runtimePercentile": 95.9,
+        "memory": 75.35,
+        "memoryPercentile": 55.63,
+        "note": "Level-order BFS computing sum per level and tracking the maximum.",
+        "path": "Binary Tree - BFS/1161. MaxLevelSumBinaryTree.ts"
+      },
+      {
+        "problemNumber": 199,
+        "problem": "Binary Tree Right Side View",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(w)",
+        "constraints": {
+          "nodeCount": "0 <= number of nodes <= 100",
+          "nodeValueRange": "-100 <= Node.val <= 100"
+        },
+        "exampleInput": "[1,2,3,null,5,null,4]",
+        "expectedOutput": [
+          1,
+          3,
+          4
+        ],
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 57.96,
+        "memoryPercentile": 20.69,
+        "note": "Level‑order BFS capturing the last node value at each depth.",
+        "path": "Binary Tree - BFS/199. BinaryTreeRightSideView.ts"
+      },
+      {
+        "problemNumber": 450,
+        "problem": "Delete Node in a BST",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(h)",
+        "spaceComplexity": "O(h)",
+        "constraints": {
+          "nodeCount": "0 <= nodes <= 10^4",
+          "nodeValueRange": "-10^5 <= Node.val <= 10^5",
+          "keyRange": "-10^5 <= key <= 10^5"
+        },
+        "exampleInput": {
+          "root": "[5,3,6,2,4,null,7]",
+          "key": 3
+        },
+        "expectedOutput": "[5,4,6,2,null,null,7] (one valid answer)",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 66.53,
+        "memoryPercentile": 28.52,
+        "note": "Recursive delete handling 0, 1, 2 children; uses inorder successor for 2-child case.",
+        "path": "Binary Search Tree/450. DeleteANodeInBST.ts"
+      },
+      {
+        "problemNumber": 1372,
+        "problem": "Longest ZigZag Path in a Binary Tree",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(h)",
+        "constraints": {
+          "nodeCount": "1 <= number of nodes <= 5 * 10^4",
+          "nodeValue": "1 <= Node.val <= 100"
+        },
+        "exampleInput": "[1,null,1,1,1,null,null,1,1,null,1,null,null,null,1]",
+        "expectedOutput": 3,
+        "runtime": 5,
+        "runtimePercentile": 99.16,
+        "memory": 77.62,
+        "memoryPercentile": 94.54,
+        "note": "Optimized DFS starting once from root, directionally tracking the zigzag depth.",
+        "path": "Binary Tree - DFS/1372. LongestZigZagPath.ts"
+      },
+      {
+        "problemNumber": 1448,
+        "problem": "Count Good Nodes in Binary Tree",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(h)",
+        "constraints": {
+          "nodeCount": "1 <= number of nodes <= 10^5",
+          "nodeValueRange": "-10^4 <= Node.val <= 10^4"
+        },
+        "exampleInput": "[3,1,4,3,null,1,5]",
+        "expectedOutput": 4,
+        "runtime": 106,
+        "runtimePercentile": 88.06,
+        "memory": 77.73,
+        "memoryPercentile": 86.99,
+        "note": "Optimized DFS that avoids unnecessary recursion paths by passing maxSoFar through each branch.",
+        "path": "Binary Tree - DFS/1448. CountGoodNodesInBinaryTree.ts"
+      },
+      {
+        "problemNumber": 236,
+        "problem": "Lowest Common Ancestor of a Binary Tree",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(h)",
+        "constraints": {
+          "nodeCount": "2 <= number of nodes <= 10^5",
+          "nodeValueRange": "-10^9 <= Node.val <= 10^9",
+          "uniqueValues": "All Node.val are unique",
+          "nodeExistence": "p != q and both nodes exist in the tree"
+        },
+        "exampleInput": {
+          "root": [
+            3,
+            5,
+            1,
+            6,
+            2,
+            0,
+            8,
+            null,
+            null,
+            7,
+            4
+          ],
+          "p": 5,
+          "q": 1
+        },
+        "expectedOutput": 3,
+        "runtime": 48,
+        "runtimePercentile": 97.3,
+        "memory": 65.88,
+        "memoryPercentile": 56.56,
+        "note": "Recursive post-order DFS that returns a non-null value up the stack only when p or q is found.",
+        "path": "Binary Tree - DFS/236. LowestCommonAncestor.ts"
+      },
+      {
+        "problemNumber": 437,
+        "problem": "Path Sum III",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(h)",
+        "constraints": {
+          "nodeCount": "0 <= number of nodes <= 1000",
+          "nodeValue": "-10^9 <= Node.val <= 10^9",
+          "targetSum": "-1000 <= targetSum <= 1000"
+        },
+        "exampleInput": "root = [10,5,-3,3,2,null,11,3,-2,null,1], targetSum = 8",
+        "expectedOutput": 3,
+        "runtime": 3,
+        "runtimePercentile": 83.23,
+        "memory": 60.54,
+        "memoryPercentile": 92.07,
+        "note": "Uses prefix sum and backtracking to efficiently count valid paths.",
+        "path": "Binary Tree - DFS/437. PathSumIII.ts"
+      },
+      {
+        "problemNumber": 1318,
+        "problem": "Minimum Flips to Make a OR b Equal to c",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(1)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "range": "1 <= a, b, c <= 10^9"
+        },
+        "exampleInput": {
+          "a": 2,
+          "b": 6,
+          "c": 5
+        },
+        "expectedOutput": 3,
+        "runtime": 36,
+        "runtimePercentile": 86.49,
+        "memory": 54.6,
+        "memoryPercentile": 70.27,
+        "note": "Use two popcount loops (Kernighan’s method) instead of per-bit branching.",
+        "path": "Bit Manipulation/1318. MinimumFlipsToMakeAOrBEqualToC.ts"
+      },
+      {
+        "problemNumber": 198,
+        "problem": "House Robber",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "length": "1 <= nums.length <= 100",
+          "values": "0 <= nums[i] <= 400"
+        },
+        "exampleInput": "nums = [2,7,9,3,1]",
+        "expectedOutput": "12",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 55.14,
+        "memoryPercentile": 57.61,
+        "note": "Use two rolling variables to track include/exclude for O(1) space.",
+        "path": "DP - 1D/198. HouseRobber.ts"
+      },
+      {
+        "problemNumber": 790,
+        "problem": "Domino and Tromino Tiling",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "n": "1 <= n <= 1000"
+        },
+        "exampleInput": "n = 3",
+        "expectedOutput": "5",
+        "runtime": 1,
+        "runtimePercentile": 82.93,
+        "memory": 57.83,
+        "memoryPercentile": 46.34,
+        "note": "DP with rolling variables: f[i] = f[i-1] + f[i-2] + 2·g, g = g + f[i-2].",
+        "path": "DP - 1D/790. DominoAndTrominoTiling.ts"
+      },
+      {
+        "problemNumber": 1143,
+        "problem": "Longest Common Subsequence",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(m × n)",
+        "spaceComplexity": "O(min(m, n))",
+        "constraints": {
+          "len1": "1 <= text1.length <= 1000",
+          "len2": "1 <= text2.length <= 1000",
+          "chars": "text1 and text2 consist of lowercase English letters"
+        },
+        "exampleInput": "text1 = \"abcde\", text2 = \"ace\"",
+        "expectedOutput": "3",
+        "runtime": 26,
+        "runtimePercentile": 94.29,
+        "memory": 56.97,
+        "memoryPercentile": 95.8,
+        "note": "Use two rolling DP rows of length min(m,n)+1 to save memory.",
+        "path": "DP - Multidimensional/1143. LongestCommonSubsequence.ts"
+      },
+      {
+        "problemNumber": 62,
+        "problem": "Unique Paths",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(min(m, n))",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "m": "1 <= m <= 100",
+          "n": "1 <= n <= 100"
+        },
+        "exampleInput": "m = 3, n = 7",
+        "expectedOutput": "28",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 53.97,
+        "memoryPercentile": 93.21,
+        "note": "Compute C(m+n-2, m-1) using an iterative, overflow-safe approach.",
+        "path": "DP - Multidimensional/62. UniquePaths.ts"
+      },
+      {
+        "problemNumber": 714,
+        "problem": "Best Time to Buy and Sell Stock with Transaction Fee",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "priceLength": "1 <= prices.length <= 5 * 10^4",
+          "priceRange": "1 <= prices[i] < 5 * 10^4",
+          "feeRange": "0 <= fee < 5 * 10^4"
+        },
+        "exampleInput": "prices = [1,3,2,8,4,9], fee = 2",
+        "expectedOutput": "8",
+        "runtime": 1,
+        "runtimePercentile": 100,
+        "memory": 62.61,
+        "memoryPercentile": 90.28,
+        "note": "Maintain two states: cash (no stock) and hold (holding stock), update in one pass.",
+        "path": "DP - Multidimensional/714. BestTimeToBuyAndSellStockWithTransactionFee.ts"
+      },
+      {
+        "problemNumber": 72,
+        "problem": "Edit Distance",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(mn)",
+        "spaceComplexity": "O(min(m, n))",
+        "constraints": {
+          "word1Length": "0 <= word1.length <= 500",
+          "word2Length": "0 <= word2.length <= 500",
+          "characters": "word1 and word2 consist of lowercase English letters."
+        },
+        "exampleInput": "word1 = \"horse\", word2 = \"ros\"",
+        "expectedOutput": "3",
+        "runtime": 7,
+        "runtimePercentile": 85.24,
+        "memory": 58.03,
+        "memoryPercentile": 100,
+        "note": "Use two rolling arrays to reduce space to O(min(m,n)).",
+        "path": "DP - Multidimensional/72. EditDistance.ts"
+      },
+      {
+        "problemNumber": 1926,
+        "problem": "Nearest Exit from Entrance in Maze",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(m*n)",
+        "spaceComplexity": "O(m*n)",
+        "constraints": {
+          "dimensions": "1 <= m, n <= 100",
+          "cellValues": "maze[i][j] is '.' or '+'"
+        },
+        "exampleInput": {
+          "maze": [
+            [
+              "+",
+              "+",
+              ".",
+              "+"
+            ],
+            [
+              ".",
+              ".",
+              ".",
+              "+"
+            ],
+            [
+              "+",
+              "+",
+              "+",
+              "."
+            ]
+          ],
+          "entrance": [
+            1,
+            2
+          ]
+        },
+        "expectedOutput": 1,
+        "runtime": 16,
+        "runtimePercentile": 99.19,
+        "memory": 65.06,
+        "memoryPercentile": 96.34,
+        "note": "Standard BFS from entrance; first time we dequeue a border '.' (not entrance) we return distance.",
+        "path": "Graphs - BFS/1926. nearestExitFromEntranceInMaze.ts"
+      },
+      {
+        "problemNumber": 994,
+        "problem": "Rotting Oranges",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(m*n)",
+        "spaceComplexity": "O(m*n)",
+        "constraints": {
+          "dimensions": "1 <= m, n <= 10",
+          "cellValues": "grid[i][j] is 0, 1, or 2"
+        },
+        "exampleInput": "[[2,1,1],[1,1,0],[0,1,1]]",
+        "expectedOutput": 4,
+        "runtime": 7,
+        "runtimePercentile": 79.22,
+        "memory": 58.99,
+        "memoryPercentile": 88.25,
+        "note": "Push all initial rotten oranges into queue, BFS minute by minute; track fresh count and minutes.",
+        "path": "Graphs - BFS/994. rottingOranges.ts"
+      },
+      {
+        "problemNumber": 1466,
+        "problem": "Reorder Routes to Make All Paths Lead to City Zero",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "nRange": "2 <= n <= 5*10^4",
+          "edges": "connections.length == n-1"
+        },
+        "exampleInput": {
+          "n": 6,
+          "connections": [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              2,
+              3
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        },
+        "expectedOutput": 3,
+        "runtime": 256,
+        "runtimePercentile": 81.15,
+        "memory": 98.5,
+        "memoryPercentile": 69.11,
+        "note": "Build undirected graph where each edge stores original direction; DFS/BFS from 0 counting edges that need reversal.",
+        "path": "Graphs - DFS/1466. ReorderRoutesToMakeAllPathsLeadToTheCityZero.ts"
+      },
+      {
+        "problemNumber": 399,
+        "problem": "Evaluate Division",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(E + Q * α(V))",
+        "spaceComplexity": "O(V)",
+        "constraints": {
+          "equations": "1 <= equations.length <= 20",
+          "queries": "1 <= queries.length <= 20"
+        },
+        "exampleInput": {
+          "equations": [
+            [
+              "a",
+              "b"
+            ],
+            [
+              "b",
+              "c"
+            ]
+          ],
+          "values": [
+            2,
+            3
+          ],
+          "queries": [
+            [
+              "a",
+              "c"
+            ],
+            [
+              "b",
+              "a"
+            ],
+            [
+              "a",
+              "e"
+            ],
+            [
+              "a",
+              "a"
+            ],
+            [
+              "x",
+              "x"
+            ]
+          ]
+        },
+        "expectedOutput": [
+          6,
+          0.5,
+          -1,
+          1,
+          -1
+        ],
+        "note": "Union‑Find with weighted edges: parent map holds ratio to parent; answer query via finding roots and ratio between.",
+        "path": "Graphs - DFS/399. EvaluateDivision.ts"
+      },
+      {
+        "problemNumber": 547,
+        "problem": "Number of Provinces",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n^2)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "nRange": "1 <= n <= 200",
+          "matrixSquare": "n == isConnected.length == isConnected[i].length"
+        },
+        "exampleInput": "[[1,1,0],[1,1,0],[0,0,1]]",
+        "expectedOutput": 2,
+        "runtime": 2,
+        "runtimePercentile": 80.54,
+        "memory": 58.87,
+        "memoryPercentile": 43.48,
+        "note": "Union‑Find (Disjoint Set) merges directly connected cities; count distinct roots.",
+        "path": "Graphs - DFS/547. NumberOfProvinces.ts"
+      },
+      {
+        "problemNumber": 841,
+        "problem": "Keys and Rooms",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n + e)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "roomCount": "2 <= n <= 1000",
+          "keysTotal": "1 <= sum(rooms[i].length) <= 3000"
+        },
+        "exampleInput": "[[1],[2],[3],[]]",
+        "expectedOutput": true,
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 58.04,
+        "memoryPercentile": 66.05,
+        "note": "BFS using a queue to traverse reachable rooms via collected keys.",
+        "path": "Graphs - DFS/841. KeysAndRooms.ts"
+      },
+      {
+        "problemNumber": 1657,
+        "problem": "Determine if Two Strings Are Close",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n log n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "stringLength": "1 <= word1.length, word2.length <= 10^5",
+          "characters": "word1 and word2 contain only lowercase English letters."
+        },
+        "exampleInput": [
+          "cabbba",
+          "abbccc"
+        ],
+        "expectedOutput": true,
+        "runtime": 20,
+        "runtimePercentile": 94.35,
+        "memory": 64.41,
+        "memoryPercentile": 37.16,
+        "note": "Uses character frequency counting and sorting to validate transformations.",
+        "path": "Hash Map & Set/1657. Determine if Two Strings are Close.ts"
+      },
+      {
+        "problemNumber": 2352,
+        "problem": "Equal Row and Column Pairs",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n^2)",
+        "spaceComplexity": "O(n^2)",
+        "constraints": {
+          "matrixSize": "1 <= n <= 200",
+          "elementRange": "1 <= grid[i][j] <= 10^5"
+        },
+        "exampleInput": [
+          [
+            [
+              3,
+              2,
+              1
+            ],
+            [
+              1,
+              7,
+              6
+            ],
+            [
+              2,
+              7,
+              7
+            ]
+          ]
+        ],
+        "expectedOutput": 1,
+        "runtime": 26,
+        "runtimePercentile": 94.09,
+        "memory": 64.85,
+        "memoryPercentile": 45.82,
+        "note": "Optimized hashmap lookup with JSON.stringify for faster key comparisons.",
+        "path": "Hash Map & Set/2352. Equal Row and Column Pairs.ts"
+      },
+      {
+        "problemNumber": 215,
+        "problem": "Kth Largest Element in an Array",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n) average / O(n^2) worst",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "arrayLen": "1 <= k <= nums.length <= 10^5",
+          "valueRange": "-10^4 <= nums[i] <= 10^4"
+        },
+        "exampleInput": {
+          "nums": [
+            3,
+            2,
+            1,
+            5,
+            6,
+            4
+          ],
+          "k": 2
+        },
+        "expectedOutput": 5,
+        "runtime": 9,
+        "runtimePercentile": 94.43,
+        "memory": 68.66,
+        "memoryPercentile": 98.91,
+        "note": "In‑place Quickselect partitions around random pivot until index n‑k found.",
+        "path": "Heap Priority Queue/215. KthLargestElementInAnArray.ts"
+      },
+      {
+        "problemNumber": 2336,
+        "problem": "Smallest Number in Infinite Set",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(log n) per operation",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "valueRange": "1 <= num <= 1000",
+          "calls": "<= 1000 calls to popSmallest and addBack"
+        },
+        "exampleInput": null,
+        "expectedOutput": null,
+        "runtime": 14,
+        "runtimePercentile": 100,
+        "memory": 66.9,
+        "memoryPercentile": 42.4,
+        "note": "Maintain a min-heap of added-back numbers < cur, and a pointer cur for next unpopped integer.",
+        "path": "Heap Priority Queue/2336. SmallestNumberInInfiniteSet.ts"
+      },
+      {
+        "problemNumber": 2462,
+        "problem": "Total Cost to Hire K Workers",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O((k + candidates) log candidates)",
+        "spaceComplexity": "O(candidates)",
+        "constraints": {
+          "n": "1 <= costs.length <= 10^5",
+          "costRange": "1 <= costs[i] <= 10^5",
+          "parameters": "1 <= k, candidates <= costs.length"
+        },
+        "exampleInput": {
+          "costs": [
+            17,
+            12,
+            10,
+            2,
+            7,
+            2,
+            11,
+            20,
+            8
+          ],
+          "k": 3,
+          "candidates": 4
+        },
+        "expectedOutput": 11,
+        "runtime": 162,
+        "runtimePercentile": 38.34,
+        "memory": 78.46,
+        "memoryPercentile": 48.12,
+        "note": "This JS implementation is heavily optimized—flattened heaps and composite keys—yet JS engine overhead caps us around ~40%. Further gains require a compiled language solution (e.g., C++).",
+        "path": "Heap Priority Queue/2462. TotalCosttoHireKWorkers.ts"
+      },
+      {
+        "problemNumber": 2542,
+        "problem": "Maximum Subsequence Score",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n log k)",
+        "spaceComplexity": "O(k)",
+        "constraints": {
+          "length": "1 <= nums1.length == nums2.length == n <= 10^5",
+          "values": "0 <= nums1[i], nums2[i] <= 10^5",
+          "subseqSize": "1 <= k <= n"
+        },
+        "exampleInput": {
+          "nums1": [
+            1,
+            3,
+            3,
+            2
+          ],
+          "nums2": [
+            2,
+            1,
+            3,
+            4
+          ],
+          "k": 3
+        },
+        "expectedOutput": 12,
+        "runtime": 118,
+        "runtimePercentile": 100,
+        "memory": 83.02,
+        "memoryPercentile": 100,
+        "note": "Sort by nums2 descending, maintain a min-heap of selected nums1 values of size k, track sum * current nums2.",
+        "path": "Heap Priority Queue/2542. MaximumSubsequenceScore.ts"
+      },
+      {
+        "problemNumber": 435,
+        "problem": "Non-overlapping Intervals",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n log n)",
+        "spaceComplexity": "O(log n)",
+        "constraints": {
+          "n": "1 ≤ intervals.length ≤ 10⁵",
+          "pairSize": "intervals[i].length == 2",
+          "valueRange": "-5·10⁴ ≤ starti < endi ≤ 5·10⁴"
+        },
+        "exampleInput": "intervals = [[1,2],[2,3],[3,4],[1,3]]",
+        "expectedOutput": "1",
+        "runtime": 65,
+        "runtimePercentile": 97.66,
+        "memory": 85.85,
+        "memoryPercentile": 81.27,
+        "note": "Sort intervals by end ascending, then greedily select maximal non-overlapping subset; answer = total – kept.",
+        "path": "Intervals/435. NonOverlappingIntervals.ts"
+      },
+      {
+        "problemNumber": 452,
+        "problem": "Minimum Number of Arrows to Burst Balloons",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n log n)",
+        "spaceComplexity": "O(log n)",
+        "constraints": {
+          "n": "1 ≤ points.length ≤ 10⁵",
+          "pairSize": "points[i].length == 2",
+          "range": "-2³¹ ≤ xstart < xend ≤ 2³¹−1"
+        },
+        "exampleInput": "points = [[10,16],[2,8],[1,6],[7,12]]",
+        "expectedOutput": "2",
+        "runtime": 78,
+        "runtimePercentile": 90.22,
+        "memory": 78.7,
+        "memoryPercentile": 91.11,
+        "note": "Sort the original array of pairs by x-end in place and then do one pass with O(1) extra space.",
+        "path": "Intervals/452. MinimumNumberOfArrowsToBurstBalloons.ts"
+      },
+      {
+        "problemNumber": 2095,
+        "problem": "Delete the Middle Node of a Linked List",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "listLength": "1 <= list.length <= 10^5",
+          "nodeValue": "1 <= Node.val <= 10^5"
+        },
+        "exampleInput": [
+          1,
+          3,
+          4,
+          7,
+          1,
+          2,
+          6
+        ],
+        "expectedOutput": [
+          1,
+          3,
+          4,
+          1,
+          2,
+          6
+        ],
+        "runtime": 3,
+        "runtimePercentile": 93.11,
+        "memory": 101.54,
+        "memoryPercentile": 18.03,
+        "note": "Optimized two-pointer approach for efficiency.",
+        "path": "Linked List/2095. Delete Middle Node of Linked List.ts"
+      },
+      {
+        "problemNumber": 2130,
+        "problem": "Maximum Twin Sum of a Linked List",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "listSize": "2 <= list.length <= 10^5 (even length only)",
+          "nodeValues": "1 <= Node.val <= 10^5"
+        },
+        "exampleInput": [
+          5,
+          4,
+          2,
+          1
+        ],
+        "expectedOutput": 6,
+        "runtime": 5,
+        "runtimePercentile": 87.96,
+        "memory": 78.94,
+        "memoryPercentile": 67.08,
+        "note": "Optimized solution using slow & fast pointers to find the middle, in-place reversal, and two-pointer traversal.",
+        "path": "Linked List/2130. Maximum Twim Sum of a Linked List.ts"
+      },
+      {
+        "problemNumber": 328,
+        "problem": "Odd Even Linked List",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "listSize": "0 <= list.length <= 10^4",
+          "nodeValues": "-10^6 <= Node.val <= 10^6"
+        },
+        "exampleInput": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "expectedOutput": [
+          1,
+          3,
+          5,
+          2,
+          4
+        ],
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 59.49,
+        "memoryPercentile": 37.63,
+        "note": "Optimized in-place reordering using two pointers: one for odd indices and one for even indices. Preserves relative order within each group.",
+        "path": "Linked List/328. Odd Even Linked List.ts"
+      },
+      {
+        "problemNumber": 739,
+        "problem": "Daily Temperatures",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "n": "1 <= temperatures.length <= 10^5",
+          "range": "30 <= temperatures[i] <= 100"
+        },
+        "exampleInput": "[73,74,75,71,69,72,76,73]",
+        "expectedOutput": "[1,1,4,2,1,1,0,0]",
+        "runtime": 13,
+        "runtimePercentile": 92.28,
+        "memory": 81.8,
+        "memoryPercentile": 19.73,
+        "note": "Monotonic decreasing stack of indices using a pre-allocated Int32Array for speed.",
+        "path": "Monotonic Stack/739. DailyTemperatures.ts"
+      },
+      {
+        "problemNumber": 901,
+        "problem": "Online Stock Span",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "Amortized O(1) per call",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "calls": "At most 10⁴ calls to next()",
+          "priceRange": "1 <= price <= 10⁵"
+        },
+        "exampleInput": "['StockSpanner','next','next','next','next','next','next','next'], [[],[100],[80],[60],[70],[60],[75],[85]]",
+        "expectedOutput": "[null,1,1,1,2,1,4,6]",
+        "runtime": 48,
+        "runtimePercentile": 63.35,
+        "memory": 70.29,
+        "memoryPercentile": 81.45,
+        "note": "Manual monotonic stack using Int32Array pointers; reached JS performance ceiling—further gains require a compiled-language rewrite.",
+        "path": "Monotonic Stack/901. OnlineStockSpan.ts"
+      },
+      {
+        "problemNumber": 649,
+        "problem": "Dota2 Senate",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "senateLength": "1 <= senate.length <= 10^4",
+          "characters": "senate[i] is either 'R' or 'D'."
+        },
+        "exampleInput": "RDD",
+        "expectedOutput": "Dire",
+        "runtime": 10,
+        "runtimePercentile": 90.59,
+        "memory": 60.78,
+        "memoryPercentile": 41.09,
+        "note": "Optimized with counters instead of full queues.",
+        "path": "Queue/649. Dota2 Senate.ts"
+      },
+      {
+        "problemNumber": 1004,
+        "problem": "Max Consecutive Ones III",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "arrayLength": "1 <= nums.length <= 10^5",
+          "elementValues": "nums[i] is either 0 or 1",
+          "flipLimit": "0 <= k <= nums.length"
+        },
+        "exampleInput": [
+          [
+            1,
+            1,
+            1,
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          2
+        ],
+        "expectedOutput": 6,
+        "runtime": 1,
+        "runtimePercentile": 97.52,
+        "memory": 61.35,
+        "memoryPercentile": 38.53,
+        "note": "Further optimized sliding window approach with reduced checks.",
+        "path": "Sliding Window/1004. Max Consecutive Ones III.ts"
+      },
+      {
+        "problemNumber": 1456,
+        "problem": "Maximum Number of Vowels in a Substring of Given Length",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "stringLength": "1 <= s.length <= 10^5",
+          "characters": "s consists of lowercase English letters.",
+          "kLength": "1 <= k <= s.length"
+        },
+        "exampleInput": "s = 'abciiidef', k = 3",
+        "expectedOutput": "3",
+        "runtime": 9,
+        "runtimePercentile": 96.44,
+        "memory": 59.94,
+        "memoryPercentile": 17.26,
+        "note": "Highly optimized sliding window with direct array lookup and early exits.",
+        "path": "Sliding Window/1456. Max Num Vowels Substring.ts"
+      },
+      {
+        "problemNumber": 1493,
+        "problem": "Longest Subarray of 1's After Deleting One Element",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "arrayLength": "1 <= nums.length <= 10^5",
+          "values": "nums[i] is either 0 or 1"
+        },
+        "exampleInput": [
+          1,
+          1,
+          0,
+          1
+        ],
+        "expectedOutput": 3,
+        "runtime": 1,
+        "runtimePercentile": 91.79,
+        "memory": 63.34,
+        "memoryPercentile": 45.23,
+        "note": "Optimized sliding window approach for maximum efficiency.",
+        "path": "Sliding Window/1493. Longest Subarray after Del one Element.ts"
+      },
+      {
+        "problemNumber": 2390,
+        "problem": "Removing Stars From a String",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "stringLength": "1 <= s.length <= 10^5",
+          "characters": "s consists of lowercase English letters and stars '*'.",
+          "operationValidity": "The operation above can be performed on s."
+        },
+        "exampleInput": "\"leet**cod*e\"",
+        "expectedOutput": "\"lecoe\"",
+        "runtime": 13,
+        "runtimePercentile": 98.23,
+        "memory": 66.4,
+        "memoryPercentile": 47.15,
+        "note": "Uses an in-place two-pointer approach to reduce space complexity to O(1).",
+        "path": "Stack/2390. Removing Starts From a String.ts"
+      },
+      {
+        "problemNumber": 394,
+        "problem": "Decode String",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "stringLength": "1 <= s.length <= 30",
+          "characters": "s consists of lowercase English letters, digits, and square brackets '[]'.",
+          "digitRange": "All integers in s are in the range [1, 300]."
+        },
+        "exampleInput": "3[a2[c]]",
+        "expectedOutput": "accaccacc",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 54.88,
+        "memoryPercentile": 43.12,
+        "note": "Optimized stack-based decoding with efficient parsing of nested brackets.",
+        "path": "Stack/394. Decode Strings.ts"
+      },
+      {
+        "problemNumber": 735,
+        "problem": "Asteroid Collision",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "arrayLength": "2 <= asteroids.length <= 10^4",
+          "values": "-1000 <= asteroids[i] <= 1000",
+          "nonZero": "asteroids[i] != 0"
+        },
+        "exampleInput": [
+          5,
+          10,
+          -5
+        ],
+        "expectedOutput": [
+          5,
+          10
+        ],
+        "runtime": 2,
+        "runtimePercentile": 92.21,
+        "memory": 58.4,
+        "memoryPercentile": 46.27,
+        "note": "Stack-based collision resolution ensuring efficient asteroid processing.",
+        "path": "Stack/735. Asteroid Collision.ts"
+      },
+      {
+        "problemNumber": 1268,
+        "problem": "Search Suggestions System",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n log n + m log n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "numberOfProducts": "1 <= products.length <= 1000",
+          "productLengths": "1 <= products[i].length <= 3000",
+          "totalLength": "sum(products[i].length) <= 2·10⁴",
+          "unique": "all products[i] are unique lowercase strings",
+          "searchLength": "1 <= searchWord.length <= 1000"
+        },
+        "exampleInput": {
+          "products": [
+            "mobile",
+            "mouse",
+            "moneypot",
+            "monitor",
+            "mousepad"
+          ],
+          "searchWord": "mouse"
+        },
+        "expectedOutput": [
+          [
+            "mobile",
+            "moneypot",
+            "monitor"
+          ],
+          [
+            "mobile",
+            "moneypot",
+            "monitor"
+          ],
+          [
+            "mouse",
+            "mousepad"
+          ],
+          [
+            "mouse",
+            "mousepad"
+          ],
+          [
+            "mouse",
+            "mousepad"
+          ]
+        ],
+        "runtime": 14,
+        "runtimePercentile": 89.63,
+        "memory": 67.86,
+        "memoryPercentile": 91.85,
+        "note": "First sort products lexicographically. For each growing prefix, binary-search the first match and take up to 3 suggestions.",
+        "path": "Trie/1268.SearchSuggestionsSystem.ts"
+      },
+      {
+        "problemNumber": 208,
+        "problem": "Implement Trie (Prefix Tree)",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(m)",
+        "spaceComplexity": "O(N·σ)",
+        "constraints": {
+          "wordLength": "1 <= word.length, prefix.length <= 2000",
+          "calls": "≤ 3·10⁴ calls to insert/search/startsWith",
+          "alphabet": "lowercase English only"
+        },
+        "exampleInput": {
+          "operations": [
+            "Trie",
+            "insert",
+            "search",
+            "search",
+            "startsWith",
+            "insert",
+            "search"
+          ],
+          "arguments": [
+            [],
+            [
+              "apple"
+            ],
+            [
+              "apple"
+            ],
+            [
+              "app"
+            ],
+            [
+              "app"
+            ],
+            [
+              "app"
+            ],
+            [
+              "app"
+            ]
+          ]
+        },
+        "expectedOutput": [
+          null,
+          null,
+          true,
+          false,
+          true,
+          null,
+          true
+        ],
+        "runtime": 40,
+        "runtimePercentile": 77.9,
+        "memory": 80.37,
+        "memoryPercentile": 37.14,
+        "note": "Children arrays are allocated lazily to avoid paying σ=26 everywhere. Numeric‐index lookups into a small typed array beat string‐keyed maps. Further JS micro-optimizations (e.g. arena-allocating nodes) might eke out a bit more, but 90%+ in pure JS is extremely challenging due to engine overhead.",
+        "path": "Trie/208. ImplementTrie.ts"
+      },
+      {
+        "problemNumber": 11,
+        "problem": "Container With Most Water",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "arrayLength": "2 <= height.length <= 10^5",
+          "heightRange": "0 <= height[i] <= 10^4"
+        },
+        "exampleInput": "height = [1,8,6,2,5,4,8,3,7]",
+        "expectedOutput": "49",
+        "runtime": 1,
+        "runtimePercentile": 94.22,
+        "memory": 63.92,
+        "memoryPercentile": 42.02,
+        "note": "Optimized two-pointer technique with early exits for better performance.",
+        "path": "Two Pointers/11. Container with Most Water.ts"
+      },
+      {
+        "problemNumber": 1679,
+        "problem": "Max Number of K-Sum Pairs",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "arrayLength": "1 <= nums.length <= 10^5",
+          "elementRange": "1 <= nums[i] <= 10^9",
+          "kRange": "1 <= k <= 10^9"
+        },
+        "exampleInput": "nums = [3,1,3,4,3], k = 6",
+        "expectedOutput": "1",
+        "runtime": 80,
+        "runtimePercentile": 95.32,
+        "memory": 70.05,
+        "memoryPercentile": 22.59,
+        "note": "Uses a hash map to track complements, ensuring an efficient O(n) solution.",
+        "path": "Two Pointers/1679. Max Number of K-Sum Pairs.ts"
+      }
+    ]
+  }
+}

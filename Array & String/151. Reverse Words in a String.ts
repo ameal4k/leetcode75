@@ -18,7 +18,7 @@ export const info: Info = {
     runtimePercentile: 100, // Percentile ranking for runtime performance
     memory: 57.66, // Memory usage in MB (to be filled manually)
     memoryPercentile: 28.01, // Percentile ranking for memory efficiency
-    note: "Reverted to best-performing solution using optimized regex split.",
+    note: "Reverted to best-performing solution using optimized regex split."
 };
 
 function reverseWords(s: string): string {
