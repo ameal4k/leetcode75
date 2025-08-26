@@ -18,7 +18,8 @@ export const info: Info = {
     runtimePercentile: 100, // Percentile ranking for runtime performance
     memory: 57.66, // Memory usage in MB (to be filled manually)
     memoryPercentile: 28.01, // Percentile ranking for memory efficiency
-    note: "Reverted to best-performing solution using optimized regex split."
+    note: "Reverted to best-performing solution using optimized regex split.",
+    learned: true
 };
 
 function reverseWords(s: string): string {
@@ -30,3 +31,4 @@ console.log(reverseWords("the sky is blue")); // ✅ Expected Output: "blue is s
 console.log(reverseWords("  hello world  ")); // ✅ Expected Output: "world hello"
 console.log(reverseWords("a good   example")); // ✅ Expected Output: "example good a"
 console.log(reverseWords("  this   is  a test  ")); // ✅ Expected Output: "test a is this"
+

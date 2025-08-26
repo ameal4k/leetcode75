@@ -17,6 +17,7 @@ export const info: Info = {
     runtimePercentile: 98.9, // Percentile ranking for runtime performance
     memory: 61.69, // Memory usage in MB (to be filled manually)
     memoryPercentile: 38.77, // Percentile ranking for memory efficiency
+    learned: true
 };
 
 function reverseVowels(s: string): string {
@@ -36,18 +37,18 @@ function reverseVowels(s: string): string {
         while (left < right && !vowels.has(arr[left])) {
             left++;
         }
-        
         // Move right pointer backward if it's not a vowel
         while (left < right && !vowels.has(arr[right])) {
             right--;
         }
-
+        if(left < right) {
         // Swap vowels
-        [arr[left], arr[right]] = [arr[right], arr[left]];
+                [arr[left], arr[right]] = [arr[right], arr[left]];
 
-        // Move pointers toward the middle
-        left++;
-        right--;
+                // Move pointers toward the middle
+                left++;
+                right--;
+        }
     }
 
     // Convert the array back to a string and return it

@@ -1,19 +1,19 @@
 {
   "progress": {
     "totalCount": 77,
-    "learnedCount": 0,
-    "unlearnedCount": 77,
-    "percentComplete": 0,
+    "learnedCount": 2,
+    "unlearnedCount": 75,
+    "percentComplete": 2.6,
     "byDifficulty": {
       "Easy": {
         "total": 24,
-        "learned": 0,
-        "percent": 0
+        "learned": 1,
+        "percent": 4.17
       },
       "Medium": {
         "total": 53,
-        "learned": 0,
-        "percent": 0
+        "learned": 1,
+        "percent": 1.89
       },
       "Hard": {
         "total": 0,
@@ -21,15 +21,15 @@
         "percent": 0
       }
     },
-    "avgRuntime": 30.49,
+    "avgRuntime": 18.86,
     "avgMemory": 64.54,
     "avgRuntimePercentile": 93.38,
     "avgMemoryPercentile": 52.81,
     "complexityStats": {
       "time": {
         "O(n)": 47,
-        "O(h)": 2,
         "O(log n)": 2,
+        "O(h)": 2,
         "O(n + m)": 1,
         "O(1) amortized": 1,
         "O(4ⁿ · n)": 1,
@@ -54,8 +54,8 @@
         "O(m)": 1
       },
       "space": {
-        "O(1) for iterative, O(log n) for recursive": 2,
         "O(n)": 20,
+        "O(1) for iterative, O(log n) for recursive": 2,
         "O(1)": 33,
         "O(h)": 6,
         "O(h1 + h2)": 1,
@@ -72,7 +72,54 @@
       }
     }
   },
-  "learned": {},
+  "learned": {
+    "Easy": [
+      {
+        "problemNumber": 345,
+        "problem": "Reverse Vowels of a String",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "stringLength": "1 <= s.length <= 3 * 10^5",
+          "characters": "s consists of printable ASCII characters."
+        },
+        "exampleInput": "IceCreAm",
+        "expectedOutput": "AceCreIm",
+        "runtime": 2,
+        "runtimePercentile": 98.9,
+        "memory": 61.69,
+        "memoryPercentile": 38.77,
+        "learned": true,
+        "path": "Array & String/345. Reverse Vowels of a String.ts"
+      }
+    ],
+    "Medium": [
+      {
+        "problemNumber": 151,
+        "problem": "Reverse Words in a String",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(n)",
+        "constraints": {
+          "stringLength": "1 <= s.length <= 10^4",
+          "characters": "s consists of English letters (upper/lower case), digits, and spaces ' '.",
+          "hasWords": "There is at least one word in s."
+        },
+        "exampleInput": "the sky is blue",
+        "expectedOutput": "blue is sky the",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 57.66,
+        "memoryPercentile": 28.01,
+        "note": "Reverted to best-performing solution using optimized regex split.",
+        "learned": true,
+        "path": "Array & String/151. Reverse Words in a String.ts"
+      }
+    ]
+  },
   "unlearned": {
     "Easy": [
       {
@@ -179,25 +226,6 @@
         "path": "Array & String/1768. Merge Strings Alternately.ts"
       },
       {
-        "problemNumber": 345,
-        "problem": "Reverse Vowels of a String",
-        "source": "LeetCode",
-        "difficulty": "Easy",
-        "timeComplexity": "O(n)",
-        "spaceComplexity": "O(n)",
-        "constraints": {
-          "stringLength": "1 <= s.length <= 3 * 10^5",
-          "characters": "s consists of printable ASCII characters."
-        },
-        "exampleInput": "IceCreAm",
-        "expectedOutput": "AceCreIm",
-        "runtime": 2,
-        "runtimePercentile": 98.9,
-        "memory": 61.69,
-        "memoryPercentile": 38.77,
-        "path": "Array & String/345. Reverse Vowels of a String.ts"
-      },
-      {
         "problemNumber": 605,
         "problem": "Can Place Flowers",
         "source": "LeetCode",
@@ -229,6 +257,26 @@
         "path": "Array & String/605. Can Place Flowers.ts"
       },
       {
+        "problemNumber": 374,
+        "problem": "Guess Number Higher or Lower",
+        "source": "LeetCode",
+        "difficulty": "Easy",
+        "timeComplexity": "O(log n)",
+        "spaceComplexity": "O(1)",
+        "constraints": {
+          "range": "1 <= n <= 2^31 - 1",
+          "pick": "1 <= pick <= n"
+        },
+        "exampleInput": "n = 10, pick = 6",
+        "expectedOutput": "6",
+        "runtime": 29,
+        "runtimePercentile": 99.5,
+        "memory": 55.6,
+        "memoryPercentile": 54.37,
+        "note": "Use unsigned right‐shift for midpoint: (low+high)>>>1 to avoid overflow and expensive Math.floor/divide.",
+        "path": "Binary Search/374. GuessNumberHigherOrLower.ts"
+      },
+      {
         "problemNumber": 700,
         "problem": "Search in a Binary Search Tree",
         "source": "LeetCode",
@@ -252,26 +300,6 @@
         "memoryPercentile": 24.43,
         "note": "Iterative search leveraging BST ordering: move left if val < node.val, right otherwise.",
         "path": "Binary Search Tree/700. SearchInABinarySearchTree.ts"
-      },
-      {
-        "problemNumber": 374,
-        "problem": "Guess Number Higher or Lower",
-        "source": "LeetCode",
-        "difficulty": "Easy",
-        "timeComplexity": "O(log n)",
-        "spaceComplexity": "O(1)",
-        "constraints": {
-          "range": "1 <= n <= 2^31 - 1",
-          "pick": "1 <= pick <= n"
-        },
-        "exampleInput": "n = 10, pick = 6",
-        "expectedOutput": "6",
-        "runtime": 29,
-        "runtimePercentile": 99.5,
-        "memory": 55.6,
-        "memoryPercentile": 54.37,
-        "note": "Use unsigned right‐shift for midpoint: (low+high)>>>1 to avoid overflow and expensive Math.floor/divide.",
-        "path": "Binary Search/374. GuessNumberHigherOrLower.ts"
       },
       {
         "problemNumber": 104,
@@ -700,27 +728,6 @@
     ],
     "Medium": [
       {
-        "problemNumber": 151,
-        "problem": "Reverse Words in a String",
-        "source": "LeetCode",
-        "difficulty": "Medium",
-        "timeComplexity": "O(n)",
-        "spaceComplexity": "O(n)",
-        "constraints": {
-          "stringLength": "1 <= s.length <= 10^4",
-          "characters": "s consists of English letters (upper/lower case), digits, and spaces ' '.",
-          "hasWords": "There is at least one word in s."
-        },
-        "exampleInput": "the sky is blue",
-        "expectedOutput": "blue is sky the",
-        "runtime": 0,
-        "runtimePercentile": 100,
-        "memory": 57.66,
-        "memoryPercentile": 28.01,
-        "note": "Reverted to best-performing solution using optimized regex split.",
-        "path": "Array & String/151. Reverse Words in a String.ts"
-      },
-      {
         "problemNumber": 238,
         "problem": "Product of Array Except Self",
         "source": "LeetCode",
@@ -846,74 +853,6 @@
         "path": "Backtracking/216. CombinationSumIII.ts"
       },
       {
-        "problemNumber": 1161,
-        "problem": "Maximum Level Sum of a Binary Tree",
-        "source": "LeetCode",
-        "difficulty": "Medium",
-        "timeComplexity": "O(n)",
-        "spaceComplexity": "O(w)",
-        "constraints": {
-          "nodeCount": "1 <= number of nodes <= 10^4",
-          "nodeValueRange": "-10^5 <= Node.val <= 10^5"
-        },
-        "exampleInput": "[1,7,0,7,-8,null,null]",
-        "expectedOutput": 2,
-        "runtime": 5,
-        "runtimePercentile": 95.9,
-        "memory": 75.35,
-        "memoryPercentile": 55.63,
-        "note": "Level-order BFS computing sum per level and tracking the maximum.",
-        "path": "Binary Tree - BFS/1161. MaxLevelSumBinaryTree.ts"
-      },
-      {
-        "problemNumber": 199,
-        "problem": "Binary Tree Right Side View",
-        "source": "LeetCode",
-        "difficulty": "Medium",
-        "timeComplexity": "O(n)",
-        "spaceComplexity": "O(w)",
-        "constraints": {
-          "nodeCount": "0 <= number of nodes <= 100",
-          "nodeValueRange": "-100 <= Node.val <= 100"
-        },
-        "exampleInput": "[1,2,3,null,5,null,4]",
-        "expectedOutput": [
-          1,
-          3,
-          4
-        ],
-        "runtime": 0,
-        "runtimePercentile": 100,
-        "memory": 57.96,
-        "memoryPercentile": 20.69,
-        "note": "Level‑order BFS capturing the last node value at each depth.",
-        "path": "Binary Tree - BFS/199. BinaryTreeRightSideView.ts"
-      },
-      {
-        "problemNumber": 450,
-        "problem": "Delete Node in a BST",
-        "source": "LeetCode",
-        "difficulty": "Medium",
-        "timeComplexity": "O(h)",
-        "spaceComplexity": "O(h)",
-        "constraints": {
-          "nodeCount": "0 <= nodes <= 10^4",
-          "nodeValueRange": "-10^5 <= Node.val <= 10^5",
-          "keyRange": "-10^5 <= key <= 10^5"
-        },
-        "exampleInput": {
-          "root": "[5,3,6,2,4,null,7]",
-          "key": 3
-        },
-        "expectedOutput": "[5,4,6,2,null,null,7] (one valid answer)",
-        "runtime": 0,
-        "runtimePercentile": 100,
-        "memory": 66.53,
-        "memoryPercentile": 28.52,
-        "note": "Recursive delete handling 0, 1, 2 children; uses inorder successor for 2-child case.",
-        "path": "Binary Search Tree/450. DeleteANodeInBST.ts"
-      },
-      {
         "problemNumber": 162,
         "problem": "Find Peak Element",
         "source": "LeetCode",
@@ -976,6 +915,74 @@
         "memoryPercentile": 72.96,
         "note": "Use bitwise operations for ceil division to avoid Math.floor overhead.",
         "path": "Binary Search/875. KokoEatingBananas.ts"
+      },
+      {
+        "problemNumber": 450,
+        "problem": "Delete Node in a BST",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(h)",
+        "spaceComplexity": "O(h)",
+        "constraints": {
+          "nodeCount": "0 <= nodes <= 10^4",
+          "nodeValueRange": "-10^5 <= Node.val <= 10^5",
+          "keyRange": "-10^5 <= key <= 10^5"
+        },
+        "exampleInput": {
+          "root": "[5,3,6,2,4,null,7]",
+          "key": 3
+        },
+        "expectedOutput": "[5,4,6,2,null,null,7] (one valid answer)",
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 66.53,
+        "memoryPercentile": 28.52,
+        "note": "Recursive delete handling 0, 1, 2 children; uses inorder successor for 2-child case.",
+        "path": "Binary Search Tree/450. DeleteANodeInBST.ts"
+      },
+      {
+        "problemNumber": 1161,
+        "problem": "Maximum Level Sum of a Binary Tree",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(w)",
+        "constraints": {
+          "nodeCount": "1 <= number of nodes <= 10^4",
+          "nodeValueRange": "-10^5 <= Node.val <= 10^5"
+        },
+        "exampleInput": "[1,7,0,7,-8,null,null]",
+        "expectedOutput": 2,
+        "runtime": 5,
+        "runtimePercentile": 95.9,
+        "memory": 75.35,
+        "memoryPercentile": 55.63,
+        "note": "Level-order BFS computing sum per level and tracking the maximum.",
+        "path": "Binary Tree - BFS/1161. MaxLevelSumBinaryTree.ts"
+      },
+      {
+        "problemNumber": 199,
+        "problem": "Binary Tree Right Side View",
+        "source": "LeetCode",
+        "difficulty": "Medium",
+        "timeComplexity": "O(n)",
+        "spaceComplexity": "O(w)",
+        "constraints": {
+          "nodeCount": "0 <= number of nodes <= 100",
+          "nodeValueRange": "-100 <= Node.val <= 100"
+        },
+        "exampleInput": "[1,2,3,null,5,null,4]",
+        "expectedOutput": [
+          1,
+          3,
+          4
+        ],
+        "runtime": 0,
+        "runtimePercentile": 100,
+        "memory": 57.96,
+        "memoryPercentile": 20.69,
+        "note": "Level‑order BFS capturing the last node value at each depth.",
+        "path": "Binary Tree - BFS/199. BinaryTreeRightSideView.ts"
       },
       {
         "problemNumber": 1372,
