@@ -38,6 +38,8 @@ coverage/
 
 # Ignore package-lock.json or yarn.lock if using Yarn
 package-lock.json
+leetcodeIndex.json
+study_plan.json
 .pnpm-debug.log
 .yarn-integrity
 
